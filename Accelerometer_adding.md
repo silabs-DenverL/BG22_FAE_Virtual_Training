@@ -57,6 +57,7 @@ Pins used to connect between the EFR32BG22 and IMU:
 ### Creating the Project (based on SOC empty)
 1. If the BG22 Thunderboard has not been plugged into PC using the USB cable (micro type), do so now. 
 2. In the "Debug Adapters window", click on the Thunderboard EFR32BG22 (board). The kit and debug information (board and target) should be displayed in the Launcher->Debug Adapters window. 
+
 ![Debug Adapters window](/images/Lab_DebugAdapters.png)
 
 3. Information about the target hardware and software will appear in Launcher -> Overview tab (together with the Adapter FW and Secure FW version). If this does not appear, click on the Launcher button in the top right corner.
@@ -77,6 +78,7 @@ Note: to filter the projects, Select/Checked the Bluetooth for the "Technology T
 10. Check "Use default location" (workspace).
 11. Click Finish to generate the project.
 12. The IDE perspective launchered automatically.
+
 ![IDE Window](/images/Lab_IDEWindows.png)
 
 13. You could see gatt_configuration.btconf, soc_spi_acc.slcp and readme showed up.
