@@ -41,7 +41,7 @@ Refer to EFR32BG22 thunderboard [schemtic](https://www.silabs.com/documents/publ
 ### Connection between IMU sensor and EFR32BG22
 
 ![Energy Mode Transition Table](/images/EFR_Connect_1.png)
-<img src="https://github.com/Denver-Lu/BG22_FAE_Virtual_Training/blob/main/images/EFR_Connect_1.png"/>
+
 
 Pins used to connect between the EFR32BG22 and IMU:
 - SPI interface:
