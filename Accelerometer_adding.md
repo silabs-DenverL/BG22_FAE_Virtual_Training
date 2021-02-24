@@ -132,7 +132,7 @@ void sl_internal_app_process_action(void)
 
 ### Rename the 'device name'
 17. // Isaac  
-![GATT Service](Lab_Rename.png)  
+![device name](/images/Lab_Rename.png)  
 
 ### Adding the Project Source Files
 18. Copy [app.c](/source/app.c) source file to the top level of the project. 
