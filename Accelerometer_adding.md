@@ -155,7 +155,7 @@ Right-click on the 'hex' file (under 'GNU ARM xxx - Debug') and select 'Flash to
 
 ## Usage
 ### Connecting with EFR Connect App
-21. With the 'EFR Connect App', 'connect' to the device and view the sensor data that is sent from the EFR32BG22 device (via notification).  
+21. With the 'EFR Connect App', 'Connect' to the device and view the sensor data that is sent from the EFR32BG22 device (via notification).  
 ![EFR Connect 1](/images/EFR_Connect_1.png)  
 **Note**: If there are many bluetooth device around.  
 You may try to get the MAC of the device via Simplicity Commander (Serial number) first.  
