@@ -7,7 +7,7 @@ This lab shows how to add this accelerometer sensor quickly.
 **Topic Covered**
 - Accelerometer (Inertial Measurement Unit) sensor 
 - Software component 
-- EFR connect app
+- *EFR Connect* app
 
 ## Getting Started
 Review the following materials before starting this lab. 
