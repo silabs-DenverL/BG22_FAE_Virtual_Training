@@ -55,7 +55,7 @@ EFR32BG22 pins used to connect between the EFR32BG22 and ICM-20648:
 ## Lab
 ### Creating the Project (based on SoC Empty)
 1. If the EFR32BG22 Thunderboard has not been plugged into PC using the USB cable, do so now. 
-2. In the *Debug Adapters* window, click on the 'Thunderboard EFR32BG22 (ID:xxxxxxxxx)'. The 'kit' (end with SLTB010A) and 'device' debug information should be displayed in the 'Launcher->Debug Adapters' window. 
+2. In the *Launcher perspective->Debug Adapters* window, click on the 'Thunderboard EFR32BG22 (ID:xxxxxxxxx)'. The 'kit' (end with SLTB010A) and 'device' debug information should be displayed in the 'Launcher->Debug Adapters' window. 
 
 ![Debug Adapters window](/images/Lab_DebugAdapters.png) 
 
