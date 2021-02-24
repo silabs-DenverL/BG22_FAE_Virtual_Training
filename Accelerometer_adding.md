@@ -123,7 +123,7 @@ After you add/install the Inertial Measurement Unit GATT Service, you will see s
 
 If you open the config -> btconf -> gatt_configuration.btcon gatt configure file, you could see the Acceleration and Orientation was added.
 
-![GATT Acceleration](/images/Lab_Acceleration_Orientation.png"/>
+![GATT Acceleration](/images/Lab_Acceleration_Orientation.png)
 
 In file sl_event_handler.c, you could see the API sl_gatt_service_imu_step was added into the routine sl_internal_app_process_action.
 ```
@@ -158,6 +158,7 @@ Note: The BG22 has additional security features and in some cases (i.e., when th
 20. With the EFR Connect App, connect to the device and view the sensor data that is sent from the EFR32BG22 device (via notification).
 
 ![EFR Connect 1](/images/EFR_Connect_1.png)
+
 Note: If there are many Bluetooth device around. You may try to get the MAC of the device via Simplicity Commander (Serial number) first. You may also change the device name in GATT configure and use that to know what device you should connect to.
 Or filter thee scanning via RSS strength and other.
 
