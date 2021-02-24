@@ -90,7 +90,7 @@ You could check what have been installed via checking the 'Installed Components'
 You will see components like below were installed: 
 - Advanced Configurator->Bluetooth GATT Configurator
 - Bluethooth->OTA->AppLoader
-- Platform->services->Sleep Timer
+- Platform->Services->Sleep Timer
 - etc.
 
 ### Installing the IMU sensor components
