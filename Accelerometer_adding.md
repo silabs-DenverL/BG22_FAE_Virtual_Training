@@ -158,9 +158,9 @@ Right-click on the 'hex' file (under 'GNU ARM xxx - Debug') and select 'Flash to
 21. With the 'EFR Connect App', 'Connect' to the device and view the sensor data that is sent from the EFR32BG22 device (via notification).  
 ![EFR Connect 1](/images/EFR_Connect_1.png)  
 **Note**: If there are many bluetooth device around.  
-You may try to get the MAC of the device via Simplicity Commander (Serial number) first.  
+You may try to get the *MAC* of the device via *Simplicity Commander* (*Serial Number*) first.  
 You may also use 'device name' (step 17 above) to know what device you should connect to.  
-You may also filter the scanning via 'RSSI strength' and other.  
+You may also filter the scanning via *RSSI* strength and other.  
 
 ![Commader](/images/Lab_Commander.png)  
 ![Commader](/images/Lab_Orientation_UUID.png)  
