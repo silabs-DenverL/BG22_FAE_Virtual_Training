@@ -62,23 +62,19 @@ EFR32BG22 pins used to connect between the EFR32BG22 and ICM-20648:
 
 4. Select the 'Preferred SDK' to the latest version. For this lab, the latest version of 'Gecko SDK Suite v3.1.1' is used. 
 5. Click on 'Create New Project' in the upper right hand corner. A 'New Project Wizard' window should appear. 
-6. For this lab, the 'Bluetooth->SoC Empty' project will be used as the starter project. Scroll and select 'Bluetooth->SoC Empty'. 
-
-**Note**: To filter the projects, Select/Checked the 'Bluetooth' for the 'Technology Type' and 'empty' for 'Filter on keywords'. 
-
-![Filter](/images/Lab_SocEmptyFilter.png) 
+6. For this lab, the 'Bluetooth->SoC Empty' project will be used as the starter project. Scroll and select 'Bluetooth->SoC Empty'.  
+**Note**: To filter the projects, Select/Checked the 'Bluetooth' for the 'Technology Type' and 'empty' for 'Filter on keywords'.  
+![Filter](/images/Lab_SocEmptyFilter.png)  
 
 7. Click 'Next' to move on. 
-8. Rename the project under 'Project name'. For this lab, name the project 'soc_spi_acc'. 
-
-![Rename](/images/Lab_Rename.png) 
+8. Rename the project under 'Project name'. For this lab, name the project 'soc_spi_acc'.  
+![Rename](/images/Lab_Rename.png)  
 
 9. Select (check) 'Copy contents' under 'With project files' to copy the project files into your project. This makes version control easier to manage, and future updates to the Simplicity Studio libraries will not impact the copied files in this project. 
 10. Check 'Use default location' (workspace). 
 11. Click 'Finish' to generate the project. 
-12. The 'IDE perspective launchered' automatically. 
-
-![IDE Window](/images/Lab_IDEWindows.png) 
+12. The 'IDE perspective launchered' automatically.  
+![IDE Window](/images/Lab_IDEWindows.png)  
 
 13. You could see 'gatt_configuration.btconf', 'soc_spi_acc.slcp' and 'readme' showed up.
 
