@@ -112,6 +112,7 @@ In fact, the SOC Empty project will install some software components. You could 
 #### Recap of this step (explanation):
 ##### ICM20648 Motion Sensor
 After you add/install the motion sensor component, you will see some files was added. For example, sl_icm20648.c and sl_icm20648.h will be added.
+
 ![IMU Driver](/images/Lab_icm20648_driver.png)
 
 ##### Inertial Measurement Unit GATT Service.
