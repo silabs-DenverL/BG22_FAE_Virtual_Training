@@ -42,7 +42,6 @@ Refer to EFR32BG22 thunderboard [schemtic](https://www.silabs.com/documents/publ
 
 ![Hardware Connection](/images/HardwareIntroduction_connection.png)
 
-
 Pins used to connect between the EFR32BG22 and IMU:
 - SPI interface:
   -  SPI_MOSI (PC00)
@@ -57,26 +56,31 @@ Pins used to connect between the EFR32BG22 and IMU:
 ### Creating the Project (based on SOC empty)
 1. If the BG22 Thunderboard has not been plugged into PC using the USB cable (micro type), do so now. 
 2. In the "Debug Adapters window", click on the Thunderboard EFR32BG22 (board). The kit and debug information (board and target) should be displayed in the Launcher->Debug Adapters window.
+
 ![Debug Adapters window](/images/Lab_DebugAdapters.png)
 
 3. Information about the target hardware and software will appear in Launcher -> Overview tab (together with the Adapter FW and Secure FW version). If this does not appear, click on the Launcher button in the top right corner.
 Note: If the Secure FW showed as Unknown, you could click Read FW Version on the right side of it to get the version. You may also upgrade the Adapter FW to the latest if it was not the latest yet.
+
 ![Overview](/images/Lab_ThunderboardOverview.png)
 
 4. Select the "Preferred SDK" to the latest version. For this lab, the latest version of "Gecko SDK Suite" v3.1.1 is used.
 5. Click on "Create New Project" in the upper right hand corner. A "New Project Wizard" window should appear.
 6. For this lab, the Bluetooth -> SoC Empty project will be used as the starter project. Scroll and select Bluetooth -> SoC Empty. 
 Note: to filter the projects, Select/Checked the Bluetooth for the "Technology Type" and empty for "keywords".
+
 ![Filter](/images/Lab_SocEmptyFilter.png)
 
 7. Click Next to move on.
 8. Rename the project under "Project name". For this lab, name the project soc_spi_acc.
+
 ![Rename](/images/Lab_Rename.png)
 
 9. Select (check) "Copy contents" under "With Project files" to copy the project files into your project. This makes version control easier to manage and future updates to the Simplicity Studio libraries will not impact the copied files in this project.
 10. Check "Use default location" (workspace).
 11. Click Finish to generate the project.
 12. The IDE perspective launchered automatically.
+
 ![IDE Window](/images/Lab_IDEWindows.png)
 
 13. You could see gatt_configuration.btconf, soc_spi_acc.slcp and readme showed up.
@@ -88,20 +92,21 @@ In fact, the SOC Empty project will install some software components. You could 
 - Platform -> services->Sleep Timer
 - etc.
 
-
-
 ### Installing the imu sensor components
 14. Select the Software Components tab at the top.
 15. Scroll down to the "Platform" section. Notice how there are many components available that you can install for your application with ease.
 16. Install the following components using the Install button as shown in the image. The process is repeated for all components needed to add.
 - Services -> IO stream ->IO Stream: USART (dependent).
+
 ![IO Stream](/images/Lab_IO_Stream.png)
 
 - Platform -> Board Driver -> IMU - Inertial Measurement Unit.
+
 ![IMU Sensor](/images/Lab_IMU_Sensor.png)
 
 - Bluetooth -> GATT -> Inertial Measurement Unit GATT Service.
 - Bluetooth -> Sensor -> Inertial Measurement Unit Sensor.
+
 ![GATT Service](/images/Lab_GATT_Service.png)
 
 #### Recap of this step (explanation):
@@ -111,9 +116,11 @@ After you add/install the motion sensor component, you will see some files was a
 
 ##### Inertial Measurement Unit GATT Service.
 After you add/install the Inertial Measurement Unit GATT Service, you will see somes other files was added.
+
 ![GATT Service](/images/Lab_GATT_Service.png)
 
 If you open the config -> btconf -> gatt_configuration.btcon gatt configure file, you could see the Acceleration and Orientation was added.
+
 ![GATT Acceleration](/images/Lab_Acceleration_Orientation.png)
 
 In file sl_event_handler.c, you could see the API sl_gatt_service_imu_step was added into the routine sl_internal_app_process_action.
@@ -128,11 +135,8 @@ Note: UUID for Acceleration and Orientation could be attained in this step.
 
 ### Adding the Project Source Files
 17. Copy app.c source file to the top level of the project. The source files (automatically added included) and code details are found at the Code Explanation section of this doc. app.c will overwrite the existing file to add the new application. The source files can be dragged and dropped into Simplicity Studio or placed in this file path.
-
-C:\Users\user_acount\SimplicityStudio\v5_workshop\soc_spi_acc
-
+C:\Users\user_acount\SimplicityStudio\v5_workshop\soc_spi_acc  
 Where user_acount is the default workspace and SS installation path.
-
 You can also edit the app.c file manually if you prefer to this way.
 
 ### Build and Flash the Project
@@ -141,24 +145,29 @@ Right-click on the hex file and select Flash to Device... to make the Flash Prog
 Note: if a Device Selection window appears, select the correct device.
 19. Click Program to flash the device.
 Note: The BG22 has additional security features and in some cases (i.e., when the board is first plugged in), the tools will prompt to query the Debug Challenge Interface (DCI). Select the connected device and then the link for “Click to Query Lock Status.” The device target to program text will no longer be grayed out and then select “OK.”
+
 ![Flash Programmer](/images/Lab_ProgramFlash.png)
 
 ## Usage
 ### Connecting with EFR Connect App
 20. With the EFR Connect App, connect to the device and view the sensor data that is sent from the EFR32BG22 device (via notification).
+
 ![EFR Connect 1](/images/EFR_Connect_1.png)
 
 Note: If there are many Bluetooth device around. You may try to get the MAC of the device via Simplicity Commander (Serial number) first. You may also change the device name in GATT configure and use that to know what device you should connect to.
 Or filter the scanning via RSSI strength and other.
+
 ![Commader](/images/Lab_Commander.png)
 ![Commader](/images/Lab_Orientation_UUID.png)
 
 21. Click the notify button (UUID that has 885D and 45DD).
+
 ![EFR Connect 2](/images/EFR_Connect_2.png)
 
 
 22. You should see the sensor data get updated regularly.
 You could change the orientation of the Thunderboard to see this change.
+
 ![EFR Connect 3](/images/EFR_Connect_3.png)
 
 ## Code Explanation
@@ -167,6 +176,7 @@ The following sections explain critical lines of code pertinent to this lab. The
 #### sl_icm20648_config.h
 This is a header file generated automatically by the Simplicity Studio pintool/software component. You may need to change the pin map based on your hardware.
 Use the software components->Platform->Board drivers->ICM20648->Configure to change this.
+
 ![pintool](/images/Lab_pintool.png)
 
 #### sl_icm20648.c
@@ -251,7 +261,8 @@ C:\SiliconLabs\SimplicityStudio\v5\developer\sdks\gecko_sdk_suite\v3.1\app\bluet
     }
 ```
 ## Source
-[app.c](https://github.com/silabs-DenverL/ADCxSyncCapture/blob/master/app.c)
+
+[app.c](/source/app.c)
 
 ## Porting Consideration
 ### Other Drivers
