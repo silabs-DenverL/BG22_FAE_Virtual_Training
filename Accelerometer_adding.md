@@ -93,7 +93,7 @@ You will see components like below were installed:
 - Platform->Services->Sleep Timer
 - etc.
 
-### Installing the IMU sensor components
+### Installing the IMU Sensor *Software Components*
 14. Select the 'Software Components' tab on the top. 
 15. 'Scroll down' to the different sections (like 'Platform'). Notice how there are many components available that you can install for your application with ease. 
 16. Install the following components using the 'Install' button as shown in the image. The process is repeated for all components needed to add. 
