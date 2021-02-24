@@ -291,12 +291,9 @@ Ensure to program the bootloader to the device first. In some cases, the bootloa
     'C:\SiliconLabs\SimplicityStudio_v5\developer\sdks\gecko_sdk_suite\v3.1\platform\bootloader\sample-apps\bootloader-storage-internal-single-512k\efr32mg22c224f512im40-brd4182a\bootloader-storage-internal-single-512k.s37'  
     -  Flash a demo example first (like 'Bluetooth SOC - thunderboard EFR32BG22'), then flash the application got here.  
 
-
 ## Reference
 [Peripheral examples](https://github.com/SiliconLabs/peripheral_examples)  
-
 [GSDK document](https://docs.silabs.com/gecko-platform/latest/)  
-
 [SS v5 user guide](https://docs.silabs.com/simplicity-studio-5-users-guide/latest/ss-5-users-guide-overview/)  
 
 
