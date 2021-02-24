@@ -42,7 +42,7 @@ Refer to EFR32BG22 thunderboard [schemtic](https://www.silabs.com/documents/publ
 
 ![Hardware Connection](/images/HardwareIntroduction_connection.png)
 
-Pins used to connect between the EFR32BG22 and IMU:
+Pins used to connect between the EFR32BG22 and ICM-20648:
 - SPI interface:
   -  SPI_MOSI (PC00)
   -  SPI_MISO (PC01)
