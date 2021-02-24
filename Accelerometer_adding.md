@@ -32,7 +32,7 @@ Ensure that you have the correct hardware and software prepared to successfully 
 Download and install [Simplicity Studio v5](https://www.silabs.com/products/development-tools/software/simplicity-studio) if it is not already installed. Be sure to update to have *GSDK* 3.1.x and *Bluetooth Stack* installed. 
 
 ### Connect your Hardware
-Attach the EFR32BG22 Thunderboard kit to the PC with Simplicity Studio installed by using a USB cable (not a charging cable). Connecting between the PC host USB port to the J-link USB port (USB micro) on the kit. 
+Attach the EFR32BG22 Thunderboard kit to the PC with Simplicity Studio installed by using a USB cable (not a charging cable). Connecting between the PC host USB port and the J-link USB port (USB micro) on the kit. 
 
 ![USB JLink](/images/GettingStarted_USB_JLink.png) 
 
