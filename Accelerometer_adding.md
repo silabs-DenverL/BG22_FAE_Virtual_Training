@@ -59,11 +59,9 @@ EFR32BG22 pins used to connect between the EFR32BG22 and ICM-20648:
 
 ![Debug Adapters window](/images/Lab_DebugAdapters.png) 
 
-3. Information about the target hardware and software will appear in 'Launcher->Overview' tab (together with the 'Adapter FW' and 'Secure FW' version). If this does not appear, click on the 'Launcher' button in the top right corner. 
-
-**Note**: If the 'Secure FW' showed as Unknown, you could click 'Read FW Version' on the right side of it to get the version. You may also upgrade the 'Adapter FW' to the latest version if it was not the latest yet. 
-
-![Overview](/images/Lab_ThunderboardOverview.png) 
+3. Information about the target hardware and software will appear in 'Launcher->Overview' tab (together with the 'Adapter FW' and 'Secure FW' version). If this does not appear, click on the 'Launcher' button in the top right corner.  
+**Note**: If the 'Secure FW' showed as Unknown, you could click 'Read FW Version' on the right side of it to get the version. You may also upgrade the 'Adapter FW' to the latest version if it was not the latest yet.  
+![Overview](/images/Lab_ThunderboardOverview.png)  
 
 4. Select the 'Preferred SDK' to the latest version. For this lab, the latest version of 'Gecko SDK Suite v3.1.1' is used. 
 5. Click on 'Create New Project' in the upper right hand corner. A 'New Project Wizard' window should appear. 
