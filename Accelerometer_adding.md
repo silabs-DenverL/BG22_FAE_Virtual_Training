@@ -97,36 +97,30 @@ You will see components like below were installed:
 14. Select the 'Software Components' tab on the top. 
 15. 'Scroll down' to the different sections (like 'Platform'). Notice how there are many components available that you can install for your application with ease. 
 16. Install the following components using the 'Install' button as shown in the image. The process is repeated for all components needed to add. 
-- Services->IO stream->IO Stream: USART (dependent) 
+- Services->IO stream->IO Stream: USART (dependent)  
+![IO Stream](/images/Lab_IO_Stream.png)  
 
-![IO Stream](/images/Lab_IO_Stream.png) 
+- Platform->Board Driver->IMU - Inertial Measurement Unit  
+![IMU Sensor](/images/Lab_IMU_Sensor.png)  
 
-- Platform->Board Driver->IMU - Inertial Measurement Unit 
-
-![IMU Sensor](/images/Lab_IMU_Sensor.png) 
-
-- Bluetooth-> GATT->Inertial Measurement Unit GATT Service 
-- Bluetooth-> Sensor->Inertial Measurement Unit 
-
-![GATT Service](/images/Lab_GATT_Service.png) 
+- Bluetooth-> GATT->Inertial Measurement Unit GATT Service  
+- Bluetooth-> Sensor->Inertial Measurement Unit  
+![GATT Service](/images/Lab_GATT_Service.png)  
 
 #### Recap of this step (explanation):
 ##### ICM20648 Motion Sensor
-After you add/install the 'IMU - Inertial Measurement Unit', you will see some files were added. For example, 'sl_icm20648.c' and 'sl_icm20648.h' will be added. 
-**Note:** These files are driver file prepared by Silabs for ICM-20648. If you use sensor from another vendor, you need implement the similar driver by your own. 
-
-![IMU Driver](/images/Lab_icm20648_driver.png) 
+After you add/install the 'IMU - Inertial Measurement Unit', you will see some files were added. For example, 'sl_icm20648.c' and 'sl_icm20648.h' will be added.  
+**Note:** These files are driver file prepared by Silabs for ICM-20648. If you use sensor from another vendor, you need implement the similar driver by your own.  
+![IMU Driver](/images/Lab_icm20648_driver.png)  
 
 ##### Inertial Measurement Unit GATT Service.
-After you add/install the 'Inertial Measurement Unit GATT Service', you will see somes other files was added. 
+After you add/install the 'Inertial Measurement Unit GATT Service', you will see somes other files was added.  
+![GATT Service](/images/Lab_GATT_Service.png)  
 
-![GATT Service](/images/Lab_GATT_Service.png) 
+If you open the 'config->btconf->gatt_configuration.btcon' GATT configure file, you could see the 'Acceleration' and 'Orientation' was added.  
+![GATT Acceleration](/images/Lab_Acceleration_Orientation.png)  
 
-If you open the 'config->btconf->gatt_configuration.btcon' GATT configure file, you could see the 'Acceleration' and 'Orientation' was added. 
-
-![GATT Acceleration](/images/Lab_Acceleration_Orientation.png) 
-
-In file 'sl_event_handler.c', you could see the API 'sl_gatt_service_imu_step' was added into the routine 'sl_internal_app_process_action'.
+In file 'sl_event_handler.c', you could see the API 'sl_gatt_service_imu_step' was added into the routine 'sl_internal_app_process_action'.  
 
 ```
 void sl_internal_app_process_action(void)
@@ -134,45 +128,42 @@ void sl_internal_app_process_action(void)
   sl_gatt_service_imu_step();
 }
 ```
-
-**Note**: UUID for Acceleration and Orientation could be attained in this step. 
+  
+**Note**: UUID for Acceleration and Orientation could be attained in this step.  
 
 ### Rename the 'device name'
-17. // Isaac
-// Picture
+17. // Isaac  
+// Picture  
 
 
 
 ### Adding the Project Source Files
 18. Copy [app.c](/source/app.c) source file to the top level of the project. 
-The source files (automatically generated and added files included) and code details are found at the 'Code Explanation' section of this doc. 'app.c' will overwrite the existing file to add the new application. The source files can be dragged and dropped into Simplicity Studio or placed in this file path: 
-'C:\Users\user_acount\SimplicityStudio\v5_workshop\soc_spi_acc' 
-Where 'user_acount' is the default workspace and Simplicity Stduio installation path. 
-You can also edit the 'app.c' file manually if you prefer to this way. 
+The source files (automatically generated and added files included) and code details are found at the 'Code Explanation' section of this doc. 'app.c' will overwrite the existing file to add the new application. The source files can be dragged and dropped into Simplicity Studio or placed in this file path:  
+'C:\Users\user_acount\SimplicityStudio\v5_workshop\soc_spi_acc'  
+Where 'user_acount' is the default workspace and Simplicity Stduio installation path.  
+You can also edit the 'app.c' file manually if you prefer to this way.  
 
 ### Build and Flash the Project
 19. Build the project by clicking on the 'hammer' icon in the top left corner of the Simplicity Studio 'IDE perspective'. 
-Right-click on the 'hex' file (under 'GNU ARM xxx - Debug') and select 'Flash to Device...'' to make the 'Flash Programmer' window appear. 
+Right-click on the 'hex' file (under 'GNU ARM xxx - Debug') and select 'Flash to Device...'' to make the 'Flash Programmer' window appear.  
 
-**Note**: Don't use the 'bin' image. 
-**Note**: If a Device Selection window appears, select the correct device. 
+**Note**: Don't use the 'bin' image.  
+**Note**: If a Device Selection window appears, select the correct device.  
 
-20. Click 'Program' to flash the device.
+20. Click 'Program' to flash the device.  
 
-**Note**: The EFR32BG22 has additional security features and in some cases (i.e., when the board is first plugged in), the tools will prompt to query the 'Debug Challenge Interface' (DCI). Select the connected device and then the link for 'Click to Query Lock Status'. The device target to program text will no longer be grayed out and then select 'OK'. 
-
-![Flash Programmer](/images/Lab_ProgramFlash.png) 
+**Note**: The EFR32BG22 has additional security features and in some cases (i.e., when the board is first plugged in), the tools will prompt to query the 'Debug Challenge Interface' (DCI). Select the connected device and then the link for 'Click to Query Lock Status'. The device target to program text will no longer be grayed out and then select 'OK'.  
+![Flash Programmer](/images/Lab_ProgramFlash.png)  
 
 ## Usage
 ### Connecting with EFR Connect App
-21. With the 'EFR Connect App', 'connect' to the device and view the sensor data that is sent from the EFR32BG22 device (via notification). 
-
-![EFR Connect 1](/images/EFR_Connect_1.png) 
-
-**Note**: If there are many bluetooth device around. 
-You may try to get the MAC of the device via Simplicity Commander (Serial number) first. 
-You may also use 'device name' (step 17 above) to know what device you should connect to. 
-You may also filter the scanning via 'RSSI strength' and other. 
+21. With the 'EFR Connect App', 'connect' to the device and view the sensor data that is sent from the EFR32BG22 device (via notification).  
+![EFR Connect 1](/images/EFR_Connect_1.png)  
+**Note**: If there are many bluetooth device around.  
+You may try to get the MAC of the device via Simplicity Commander (Serial number) first.  
+You may also use 'device name' (step 17 above) to know what device you should connect to.  
+You may also filter the scanning via 'RSSI strength' and other.  
 
 ![Commader](/images/Lab_Commander.png) 
 ![Commader](/images/Lab_Orientation_UUID.png) 
