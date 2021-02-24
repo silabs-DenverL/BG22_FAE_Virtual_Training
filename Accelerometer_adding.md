@@ -197,7 +197,7 @@ These files are in folder like below:
 
 ### Application (app.c)
 
-The *SoC Empty* project generates a default 'app.c' source file with a skeleton Bluetooth event handler. The 'app.c file provided for this lab adds code to handle the BLE connection and notifications.  
+The *SoC Empty* project generates a default ['app.c'](/source/app.c) source file with a skeleton Bluetooth event handler. The *app.c* file provided for this lab adds code to handle the BLE connection and notifications.  
 
 #### Connection Opened
 The IMU sensor is initialized and enabled when event 'sl_bt_evt_connection_opened_id' received. The IMU sampling does not start until a connection has been 'made' and the user has enabled GATT *Acceleration Notification* (or *Orientation Notification*) characteristics.  
