@@ -97,13 +97,16 @@ In fact, the SOC Empty project will install some software components. You could 
 15. Scroll down to the "Platform" section. Notice how there are many components available that you can install for your application with ease.
 16. Install the following components using the Install button as shown in the image. The process is repeated for all components needed to add.
 - Services -> IO stream ->IO Stream: USART (dependent).
+
 ![IO Stream](/images/Lab_IO_Stream.png"/>
 
 - Platform -> Board Driver -> IMU - Inertial Measurement Unit
+
 ![IMU Sensor](/images/Lab_IMU_Sensor.png"/>
 
 - Bluetooth -> GATT -> Inertial Measurement Unit GATT Service.
 - Bluetooth -> Sensor -> Inertial Measurement Unit Sensor.
+
 ![IO Stream](/images/Lab_GATT_Service.png"/>
 
 #### Recap of this step (explanation):
