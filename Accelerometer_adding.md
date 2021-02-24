@@ -17,7 +17,7 @@ Ensure that you have the correct hardware and software prepared to successfully 
 - Silicon Labs BG22 Thunderboard Kit: [SLTB010A](https://www.silabs.com/development-tools/thunderboard/thunderboard-bg22-kit) 
 
   Which included: 
-   -  [EFR32BG22C224F512IM40](https://www.silabs.com/wireless/bluetooth/efr32bg22-series-2-socs) Soc 
+   -  [EFR32BG22C224F512IM40](https://www.silabs.com/wireless/bluetooth/efr32bg22-series-2-socs) SoC 
    -  6-axis IMU (Inertial Measurement Unit): TDK InvenSense [ICM-20648](https://invensense.tdk.com/products/motion-tracking/6-axis/icm-20648/) with SPI interface 
 
 - A mobile device for installing *EFR Connect* Mobile App: Android or Apple phone/pad 
