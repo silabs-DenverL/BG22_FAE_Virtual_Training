@@ -23,7 +23,7 @@ Ensure that you have the correct hardware and software prepared to successfully 
 - A mobile device for installing *EFR Connect* Mobile App: Android or Apple phone/pad 
 ### Software Requirements
 - [Simplicity Studio v5](https://www.silabs.com/products/development-tools/software/simplicity-studio) 
-- Gecko SDK v3.1 (GSDK) or above with the Bluetooth Stack (v3.1.1) installed 
+- Gecko SDK v3.1 (GSDK) or above with the *Bluetooth Stack* (v3.1.1) installed 
 - EFR Connect Mobile App 
    -  If you have problem to access Google Play (especiall in China Mainland) or don’t have an account, try link [here](https://github.com/SiliconLabs/EFRConnect-android) 
    -  If you have problem to access Apple store or don’t have an account, try link [here](https://github.com/SiliconLabs/EFRConnect-ios) 
