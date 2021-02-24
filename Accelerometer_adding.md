@@ -99,7 +99,7 @@ You will see components like below were installed:
 - Services->IO Stream->IO Stream: USART (dependent)  
 ![IO Stream](/images/Lab_IO_Stream.png)  
 
-- Platform->Board Driver->IMU - Inertial Measurement Unit  
+- Platform->Board Drivers->IMU - Inertial Measurement Unit  
 ![IMU Sensor](/images/Lab_IMU_Sensor.png)  
 
 - Bluetooth-> GATT->Inertial Measurement Unit GATT Service  
