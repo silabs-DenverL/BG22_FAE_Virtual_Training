@@ -68,7 +68,7 @@ EFR32BG22 pins used to connect between the EFR32BG22 and ICM-20648:
 
 7. Click 'Next' to move on. 
 8. Rename the project under 'Project name'. For this lab, name the project 'soc_spi_acc'.  
-![Rename](/images/Lab_Rename.png)  
+![Rename](/images/Lab_ProjectConfiguration.png)  
 
 9. Select (check) 'Copy contents' under 'With project files' to copy the project files into your project. This makes version control easier to manage, and future updates to the Simplicity Studio libraries will not impact the copied files in this project. 
 10. Check 'Use default location' (workspace). 
@@ -132,9 +132,7 @@ void sl_internal_app_process_action(void)
 
 ### Rename the 'device name'
 17. // Isaac  
-// Picture  
-
-
+![GATT Service](Lab_Rename.png)  
 
 ### Adding the Project Source Files
 18. Copy [app.c](/source/app.c) source file to the top level of the project. 
