@@ -150,7 +150,6 @@ Right-click on the 'hex' file (under 'GNU ARM xxx - Debug') and select 'Flash to
 **Note**: If a Device Selection window appears, select the correct device.  
 
 20. Click 'Program' to flash the device.  
-
 **Note**: The EFR32BG22 has additional security features and in some cases (i.e., when the board is first plugged in), the tools will prompt to query the 'Debug Challenge Interface' (DCI). Select the connected device and then the link for 'Click to Query Lock Status'. The device target to program text will no longer be grayed out and then select 'OK'.  
 ![Flash Programmer](/images/Lab_ProgramFlash.png)  
 
