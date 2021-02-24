@@ -161,7 +161,6 @@ Right-click on the 'hex' file (under 'GNU ARM xxx - Debug') and select 'Flash to
 You may try to get the *MAC* of the device via *Simplicity Commander* (*Serial Number*) first.  
 You may also use 'device name' (step 17 above) to know what device you should connect to.  
 You may also filter the scanning via *RSSI* strength and other.  
-
 ![Commader](/images/Lab_Commander.png)  
 ![Commader](/images/Lab_Orientation_UUID.png)  
 
