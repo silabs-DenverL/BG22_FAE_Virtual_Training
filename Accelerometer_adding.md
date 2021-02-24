@@ -163,14 +163,11 @@ You may also use 'device name' (step 17 above) to know what device you should co
 You may also filter the scanning via *RSSI* strength and other.  
 ![Commader](/images/Lab_Commander.png)  
 ![Commader](/images/Lab_Orientation_UUID.png)  
-
 22. Click the 'notify' button (UUID that has 885D and 45DD, (step 16 above)).  
 ![EFR Connect 2](/images/EFR_Connect_2.png)  
-
 23. You should see the sensor data get updated regularly.  
 You could change the orientation of the Thunderboard to see this change.  
 ![EFR Connect 3](/images/EFR_Connect_3.png)  
-
 ## Code Explanation
 The following sections explain critical lines of code pertinent to this lab. The code can be found in different files (driver).  
 ### Accelerometer (icm-20648) Driver
