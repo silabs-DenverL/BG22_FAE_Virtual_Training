@@ -116,7 +116,7 @@ After you add/install the 'IMU - Inertial Measurement Unit', you will see some f
 After you add/install the 'Inertial Measurement Unit GATT Service', you will see somes other files was added.  
 ![GATT Service](/images/Lab_GATT_Service.png)  
 
-If you open the 'config->btconf->gatt_configuration.btcon' GATT configure file, you could see the 'Acceleration' and 'Orientation' was added.  
+If you open the 'config->btconf->gatt_configuration.btcon' *Bluetooth GATT configurator* file, you could see the 'Acceleration' and 'Orientation' was added.  
 ![GATT Acceleration](/images/Lab_Acceleration_Orientation.png)  
 
 In file 'sl_event_handler.c', you could see the API 'sl_gatt_service_imu_step' was added into the routine 'sl_internal_app_process_action'.  
