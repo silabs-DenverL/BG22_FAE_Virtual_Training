@@ -60,6 +60,7 @@ Pins used to connect between the EFR32BG22 and IMU:
 ![Debug Adapters window](/images/Lab_DebugAdapters.png)
 
 3. Information about the target hardware and software will appear in Launcher -> Overview tab (together with the Adapter FW and Secure FW version). If this does not appear, click on the Launcher button in the top right corner.
+
 **Note**: If the Secure FW showed as Unknown, you could click Read FW Version on the right side of it to get the version. You may also upgrade the Adapter FW to the latest if it was not the latest yet.
 
 ![Overview](/images/Lab_ThunderboardOverview.png)
@@ -67,6 +68,7 @@ Pins used to connect between the EFR32BG22 and IMU:
 4. Select the "Preferred SDK" to the latest version. For this lab, the latest version of "Gecko SDK Suite" v3.1.1 is used.
 5. Click on "Create New Project" in the upper right hand corner. A "New Project Wizard" window should appear.
 6. For this lab, the Bluetooth -> SoC Empty project will be used as the starter project. Scroll and select Bluetooth -> SoC Empty. 
+
 **Note**: to filter the projects, Select/Checked the Bluetooth for the "Technology Type" and empty for "keywords".
 
 ![Filter](/images/Lab_SocEmptyFilter.png)
@@ -143,8 +145,10 @@ You can also edit the app.c file manually if you prefer to this way.
 ### Build and Flash the Project
 18. Build the project by clicking on the hammer icon in the top left corner of the Simplicity Studio IDE perspective.
 Right-click on the hex file and select Flash to Device... to make the Flash Programmer window appear. 
+
 **Note**: if a Device Selection window appears, select the correct device.
 19. Click Program to flash the device.
+
 **Note**: The BG22 has additional security features and in some cases (i.e., when the board is first plugged in), the tools will prompt to query the Debug Challenge Interface (DCI). Select the connected device and then the link for “Click to Query Lock Status.” The device target to program text will no longer be grayed out and then select “OK.”
 
 ![Flash Programmer](/images/Lab_ProgramFlash.png)
