@@ -146,7 +146,6 @@ You can also edit the 'app.c' file manually if you prefer to this way.
 ### Build and Flash the Project
 19. Build the project by clicking on the 'hammer' icon in the top left corner of the Simplicity Studio 'IDE perspective'. 
 Right-click on the 'hex' file (under 'GNU ARM xxx - Debug') and select 'Flash to Device...'' to make the 'Flash Programmer' window appear.  
-
 **Note**: Don't use the 'bin' image.  
 **Note**: If a Device Selection window appears, select the correct device.  
 
