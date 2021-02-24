@@ -20,7 +20,7 @@ Ensure that you have the correct hardware and software prepared to successfully 
    -  [EFR32BG22C224F512IM40](https://www.silabs.com/wireless/bluetooth/efr32bg22-series-2-socs) Soc 
    -  6-axis IMU (Inertial Measurement Unit): TDK InvenSense [ICM-20648](https://invensense.tdk.com/products/motion-tracking/6-axis/icm-20648/) with SPI interface 
 
-- A mobile device for installing 'EFR Connect' Mobile App: Android or Apple phone/pad 
+- A mobile device for installing *EFR Connect* Mobile App: Android or Apple phone/pad 
 ### Software Requirements
 - [Simplicity Studio v5](https://www.silabs.com/products/development-tools/software/simplicity-studio) 
 - Gecko SDK v3.1 (GSDK) or above with the Bluetooth Stack (v3.1.1) installed 
@@ -55,7 +55,7 @@ Pins used to connect between the EFR32BG22 and ICM-20648:
 ## Lab
 ### Creating the Project (based on SoC Empty)
 1. If the EFR32BG22 Thunderboard has not been plugged into PC using the USB cable, do so now. 
-2. In the 'Debug Adapters' window, click on the 'Thunderboard EFR32BG22 (ID:xxxxxxxxx)'. The 'kit' (end with SLTB010A) and 'device' debug information should be displayed in the 'Launcher->Debug Adapters' window. 
+2. In the *Debug Adapters* window, click on the 'Thunderboard EFR32BG22 (ID:xxxxxxxxx)'. The 'kit' (end with SLTB010A) and 'device' debug information should be displayed in the 'Launcher->Debug Adapters' window. 
 
 ![Debug Adapters window](/images/Lab_DebugAdapters.png) 
 
