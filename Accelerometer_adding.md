@@ -83,9 +83,8 @@ EFR32BG22 pins used to connect between the EFR32BG22 and ICM-20648:
 // Isaac advice here:
 
 In fact, the 'SoC Empty' project will install some software components. 
-You could check what have been installed via checking the 'Installed Components' under 'Software Components'. 
-
-![Installed Components](/images/Lab_InlstalledComponents.png) 
+You could check what have been installed via checking the 'Installed Components' under 'Software Components'.  
+![Installed Components](/images/Lab_InlstalledComponents.png)  
 
 You will see components like below were installed: 
 - Advanced Configurator->Bluetooth GATT Configurator
@@ -97,7 +96,7 @@ You will see components like below were installed:
 14. Select the 'Software Components' tab on the top. 
 15. 'Scroll down' to the different sections (like 'Platform'). Notice how there are many components available that you can install for your application with ease. 
 16. Install the following components using the 'Install' button as shown in the image. The process is repeated for all components needed to add. 
-- Services->IO stream->IO Stream: USART (dependent)  
+- Services->IO Stream->IO Stream: USART (dependent)  
 ![IO Stream](/images/Lab_IO_Stream.png)  
 
 - Platform->Board Driver->IMU - Inertial Measurement Unit  
@@ -165,49 +164,46 @@ You may try to get the MAC of the device via Simplicity Commander (Serial number
 You may also use 'device name' (step 17 above) to know what device you should connect to.  
 You may also filter the scanning via 'RSSI strength' and other.  
 
-![Commader](/images/Lab_Commander.png) 
-![Commader](/images/Lab_Orientation_UUID.png) 
+![Commader](/images/Lab_Commander.png)  
+![Commader](/images/Lab_Orientation_UUID.png)  
 
-22. Click the 'notify' button (UUID that has 885D and 45DD, (step 16 above)). 
+22. Click the 'notify' button (UUID that has 885D and 45DD, (step 16 above)).  
+![EFR Connect 2](/images/EFR_Connect_2.png)  
 
-![EFR Connect 2](/images/EFR_Connect_2.png) 
-
-23. You should see the sensor data get updated regularly.
-You could change the orientation of the Thunderboard to see this change. 
-
-![EFR Connect 3](/images/EFR_Connect_3.png) 
+23. You should see the sensor data get updated regularly.  
+You could change the orientation of the Thunderboard to see this change.  
+![EFR Connect 3](/images/EFR_Connect_3.png)  
 
 ## Code Explanation
-The following sections explain critical lines of code pertinent to this lab. The code can be found in different files (driver).
+The following sections explain critical lines of code pertinent to this lab. The code can be found in different files (driver).  
 ### Accelerometer (icm-20648) Driver
 #### sl_icm20648_config.h
-This is a header file generated automatically by the Simplicity Studio 'pintool/software component'. You may need to change the pin map based on your hardware. 
-Use the 'software components->Platform->Board drivers->ICM20648->Configure' to change this. 
-
-![pintool](/images/Lab_pintool.png) 
+This is a header file generated automatically by the Simplicity Studio 'pintool/software component'. You may need to change the pin map based on your hardware.  
+Use the 'software components->Platform->Board drivers->ICM20648->Configure' to change this.  
+![pintool](/images/Lab_pintool.png)  
 
 #### sl_icm20648.c
-This file is located in folder like 
-'C:\SiliconLabs\SimplicityStudio\v5\developer\sdks\gecko_sdk_suite\v3.1\hardware\driver\icm20648\src' 
-This is the driver file for ICM-20648 sensor prepared by Silabs. 
-// Isaac advice!!!
+This file is located in folder like  
+'C:\SiliconLabs\SimplicityStudio\v5\developer\sdks\gecko_sdk_suite\v3.1\hardware\driver\icm20648\src'  
+This is the driver file for ICM-20648 sensor prepared by Silabs.  
+// Isaac advice!!!  
 
-If you use sensor from another vendor, you may need to consider implementing the similar driver for it. 
-Please consider contacting with the vendor of the sensor you use to get help on how implementing the driver. 
+If you use sensor from another vendor, you may need to consider implementing the similar driver for it.  
+Please consider contacting with the vendor of the sensor you use to get help on how implementing the driver.  
 
 #### sl_imu_fuse.c/sl_imu.c/sl_sensor_imu.c
-These are re-pack of the API provided in driver sl_icm20648.c. The high-level code (app.c) call API like 'sl_sensor_imu_init', 'sl_sensor_imu_get' and others provided in these files to initialize and enable/disable the IMU sensor. 
-These files are in folder like below: 
+These are re-pack of the API provided in driver sl_icm20648.c. The high-level code (app.c) call API like 'sl_sensor_imu_init', 'sl_sensor_imu_get' and others provided in these files to initialize and enable/disable the IMU sensor.  
+These files are in folder like below:  
 
-'C:\SiliconLabs\SimplicityStudio\v5\developer\sdks\gecko_sdk_suite\v3.1\hardware\driver\imu\src' 
-'C:\SiliconLabs\SimplicityStudio\v5\developer\sdks\gecko_sdk_suite\v3.1\app\bluetooth\common\sensor_imu' 
+'C:\SiliconLabs\SimplicityStudio\v5\developer\sdks\gecko_sdk_suite\v3.1\hardware\driver\imu\src'  
+'C:\SiliconLabs\SimplicityStudio\v5\developer\sdks\gecko_sdk_suite\v3.1\app\bluetooth\common\sensor_imu'  
 
 ### Application (app.c)
 
-The 'SoC Empty; project generates a default 'app.c' source file with a skeleton Bluetooth event handler. The 'app.c file provided for this lab adds code to handle the BLE connection and notifications. 
+The 'SoC Empty; project generates a default 'app.c' source file with a skeleton Bluetooth event handler. The 'app.c file provided for this lab adds code to handle the BLE connection and notifications.  
 
 #### Connection Opened
-The IMU sensor is initialized and enabled when event 'sl_bt_evt_connection_opened_id' received. The IMU sampling does not start until a connection has been 'made' and the user has enabled GATT 'notifications acceleration' (or orientation) characteristics. 
+The IMU sensor is initialized and enabled when event 'sl_bt_evt_connection_opened_id' received. The IMU sampling does not start until a connection has been 'made' and the user has enabled GATT 'notifications acceleration' (or orientation) characteristics.  
 
 ```
     static void sensor_init(void)
@@ -225,8 +221,7 @@ The IMU sensor is initialized and enabled when event 'sl_bt_evt_connection_opene
 ```
 
 #### Connection Closed
-When the connection is 'closed', the 'sl_bt_evt_connection_closed_id' event is triggered. To save power when no devices are connected the sensor was disabled via 'sensor_deinit' function. 
-
+When the connection is 'closed', the 'sl_bt_evt_connection_closed_id' event is triggered. To save power when no devices are connected the sensor was disabled via 'sensor_deinit' function.  
 
 ```
     // -------------------------------
@@ -244,14 +239,14 @@ When the connection is 'closed', the 'sl_bt_evt_connection_closed_id' event is t
 ```
 
 ### BLE notification
-Once the user has 'enabled' GATT notifications to the characteristic, the 'sl_bt_evt_gatt_server_characteristic_status_id event' is triggered. In this event, the device will periodically update the characteristic value until the device 'disconnects'. 
+Once the user has 'enabled' GATT notifications to the characteristic, the 'sl_bt_evt_gatt_server_characteristic_status_id event' is triggered. In this event, the device will periodically update the characteristic value until the device 'disconnects'.  
 
-// Isaac, expand this part!!!
+// Isaac, expand this part!!!  
 
 #### sl_event_handler.c
-This file was automatically generated and was in folder (workspace) here: 
+This file was automatically generated and was in folder (workspace) here:  
 
-'C:\Users\delu\SimplicityStudio\v5_workshop\soc_spi_acc\autogen'
+'C:\Users\delu\SimplicityStudio\v5_workshop\soc_spi_acc\autogen'  
 
 ```
     void sl_internal_app_process_action(void)
@@ -261,9 +256,9 @@ This file was automatically generated and was in folder (workspace) here:
 ```
 
 #### sl_gatt_service_imu.c
-This file was in folder like below: 
+This file was in folder like below:  
 
-'C:\SiliconLabs\SimplicityStudio\v5\developer\sdks\gecko_sdk_suite\v3.1\app\bluetooth\common\gatt_service_imu' 
+'C:\SiliconLabs\SimplicityStudio\v5\developer\sdks\gecko_sdk_suite\v3.1\app\bluetooth\common\gatt_service_imu'  
 
 ```
     void sl_gatt_service_imu_step(void)
@@ -283,31 +278,31 @@ This file was in folder like below:
 
 ## Source
 
-[app.c](/source/app.c) 
+[app.c](/source/app.c)  
 
 ## Porting Consideration
 ### Other Drivers
-EFR32BG22 Thunderboard also integrated other sensors:
-- Silabs Relative humidity & temperature sensor: I2C [Si7021](https://www.silabs.com/sensors/humidity/si7006-13-20-21-34)
-- Silabs UV and ambient light sensor: I2C [Si1133](https://www.silabs.com/sensors/optical/si1133)
-- Silabs Hall effect sensor: I2C [Si7210](https://www.silabs.com/sensors/magnetic/si7210)
+EFR32BG22 Thunderboard also integrated other sensors:  
+- Silabs Relative humidity & temperature sensor: I2C [Si7021](https://www.silabs.com/sensors/humidity/si7006-13-20-21-34)  
+- Silabs UV and ambient light sensor: I2C [Si1133](https://www.silabs.com/sensors/optical/si1133)  
+- Silabs Hall effect sensor: I2C [Si7210](https://www.silabs.com/sensors/magnetic/si7210)  
 
-If your solution needs these sensors, you may use similar procedure to add them.
+If your solution needs these sensors, you may use similar procedure to add them.  
 
 ### Bootloader
-The application generated via 'SoC Empty' project don't have the bootloader. 
-Ensure to program the bootloader to the device first. In some cases, the bootloader may be missing from the device if it has been completely erased. If that happens:
--  Optional solutions:
-    -  Open the Flash Programmer and program the bootloader found here: 
-    'C:\SiliconLabs\SimplicityStudio_v5\developer\sdks\gecko_sdk_suite\v3.1\platform\bootloader\sample-apps\bootloader-storage-internal-single-512k\efr32mg22c224f512im40-brd4182a\bootloader-storage-internal-single-512k.s37'
-    -  Flash a demo example first (like 'Bluetooth SOC - thunderboard EFR32BG22'), then flash the application got here.
+The application generated via 'SoC Empty' project don't have the bootloader.  
+Ensure to program the bootloader to the device first. In some cases, the bootloader may be missing from the device if it has been completely erased. If that happens:  
+-  Optional solutions:  
+    -  Open the Flash Programmer and program the bootloader found here:  
+    'C:\SiliconLabs\SimplicityStudio_v5\developer\sdks\gecko_sdk_suite\v3.1\platform\bootloader\sample-apps\bootloader-storage-internal-single-512k\efr32mg22c224f512im40-brd4182a\bootloader-storage-internal-single-512k.s37'  
+    -  Flash a demo example first (like 'Bluetooth SOC - thunderboard EFR32BG22'), then flash the application got here.  
 
 
 ## Reference
-[Peripheral examples](https://github.com/SiliconLabs/peripheral_examples) 
+[Peripheral examples](https://github.com/SiliconLabs/peripheral_examples)  
 
-[GSDK document](https://docs.silabs.com/gecko-platform/latest/) 
+[GSDK document](https://docs.silabs.com/gecko-platform/latest/)  
 
-[SS v5 user guide](https://docs.silabs.com/simplicity-studio-5-users-guide/latest/ss-5-users-guide-overview/) 
+[SS v5 user guide](https://docs.silabs.com/simplicity-studio-5-users-guide/latest/ss-5-users-guide-overview/)  
 
 
