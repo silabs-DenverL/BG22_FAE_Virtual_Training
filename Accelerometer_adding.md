@@ -32,16 +32,14 @@ Ensure that you have the correct hardware and software prepared to successfully 
 Download and install [Simplicity Studio v5](https://www.silabs.com/products/development-tools/software/simplicity-studio) if it is not already installed. Be sure to update to have *GSDK* 3.1.x and *Bluetooth Stack* installed. 
 
 ### Connect your Hardware
-Attach the EFR32BG22 Thunderboard kit to the PC with Simplicity Studio installed by using a USB cable (not a charging cable). Connecting between the PC host USB port and the J-link USB port (USB micro) on the kit. 
-
-![USB JLink](/images/GettingStarted_USB_JLink.png) 
+Attach the EFR32BG22 Thunderboard kit to the PC with Simplicity Studio installed by using a USB cable (not a charging cable). Connecting between the PC host USB port and the J-link USB port (USB micro) on the kit.  
+![USB JLink](/images/GettingStarted_USB_JLink.png)  
 
 ## Hardware Introduction
 Refer to EFR32BG22 thunderboard [schemtic](https://www.silabs.com/documents/public/schematic-files/BRD4184A-A01-schematic.pdf) for detailed hardware information (Schematic for EFR32BG22 Thunderboard in pdf format).
 
-### Connection between IMU sensor and EFR32BG22
-
-![Hardware Connection](/images/HardwareIntroduction_connection.png) 
+### Connection between IMU sensor and EFR32BG22  
+![Hardware Connection](/images/HardwareIntroduction_connection.png)  
 
 EFR32BG22 pins used to connect between the EFR32BG22 and ICM-20648: 
 - SPI interface:
@@ -55,9 +53,8 @@ EFR32BG22 pins used to connect between the EFR32BG22 and ICM-20648:
 ## Lab
 ### Creating the Project (based on SoC Empty)
 1. If the EFR32BG22 Thunderboard has not been plugged into PC using the USB cable, do so now. 
-2. In the *Launcher->Debug Adapters* window, click on the 'Thunderboard EFR32BG22 (ID:xxxxxxxxx)'. The 'kit' (end with SLTB010A) and 'device' debug information should be displayed in the 'Launcher->Debug Adapters' window. 
-
-![Debug Adapters window](/images/Lab_DebugAdapters.png) 
+2. In the *Launcher->Debug Adapters* window, click on the 'Thunderboard EFR32BG22 (ID:xxxxxxxxx)'. The 'kit' (end with SLTB010A) and 'device' debug information should be displayed in the 'Launcher->Debug Adapters' window.  
+![Debug Adapters window](/images/Lab_DebugAdapters.png)  
 
 3. Information about the target hardware and software will appear in 'Launcher->Overview' tab (together with the 'Adapter FW' and 'Secure FW' version). If this does not appear, click on the 'Launcher' button in the top right corner.  
 **Note**: If the 'Secure FW' showed as Unknown, you could click 'Read FW Version' on the right side of it to get the version. You may also upgrade the 'Adapter FW' to the latest version if it was not the latest yet.  
