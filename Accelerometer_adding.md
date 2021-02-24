@@ -235,7 +235,7 @@ When the connection is 'closed', the 'sl_bt_evt_connection_closed_id' event is t
       break;
 ```
 
-### BLE notification
+### BLE Notification
 Once the user has 'enabled' GATT notifications to the characteristic, the 'sl_bt_evt_gatt_server_characteristic_status_id event' is triggered. In this event, the device will periodically update the characteristic value until the device 'disconnects'.  
 
 // Isaac, expand this part!!!  
