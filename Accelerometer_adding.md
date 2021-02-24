@@ -16,16 +16,16 @@ Review the following materials before starting this lab. Ensure that you have th
 - Silicon Labs BG22 Thunderboard Kit: [SLTB010A](https://www.silabs.com/development-tools/thunderboard/thunderboard-bg22-kit)
 
   Which included:
-   -	[EFR32BG22C224F512IM40](https://www.silabs.com/wireless/bluetooth/efr32bg22-series-2-socs) Soc
-   -	6-axis IMU (Inertial Measurement Unit): TDK InvenSense [ICM-20648](https://invensense.tdk.com/products/motion-tracking/6-axis/icm-20648/) with SPI interface
+   -  [EFR32BG22C224F512IM40](https://www.silabs.com/wireless/bluetooth/efr32bg22-series-2-socs) Soc
+   -  6-axis IMU (Inertial Measurement Unit): TDK InvenSense [ICM-20648](https://invensense.tdk.com/products/motion-tracking/6-axis/icm-20648/) with SPI interface
 
 - A mobile device for installing EFR Connect Mobile App: Android phone/pad or Apple phone/pad
 ### Software Requirements
 - [Simplicity Studio v5](https://www.silabs.com/products/development-tools/software/simplicity-studio)
 - Gecko SDK v3.1 (GSDK) or above with the Bluetooth Stack (v3.1.1) installed
 - EFR Connect Mobile App
-   -	If you have problem to access Google Play in china mainland, try link [here](https://github.com/SiliconLabs/EFRConnect-android)
-   -	If you have problem to access Apple store or don’t have an account, try link [here](https://github.com/SiliconLabs/EFRConnect-ios)
+   -  If you have problem to access Google Play in china mainland, try link [here](https://github.com/SiliconLabs/EFRConnect-android)
+   -  If you have problem to access Apple store or don’t have an account, try link [here](https://github.com/SiliconLabs/EFRConnect-ios)
 
 ### Install Tools
 Download and install [Simplicity Studio v5](https://www.silabs.com/products/development-tools/software/simplicity-studio) if it is not already installed. Be sure to update to have GSDK 3.1.x and Bluetooth Stack installed.
@@ -60,14 +60,14 @@ Pins used to connect between the EFR32BG22 and IMU:
 ![Debug Adapters window](/images/Lab_DebugAdapters.png)
 
 3. Information about the target hardware and software will appear in Launcher -> Overview tab (together with the Adapter FW and Secure FW version). If this does not appear, click on the Launcher button in the top right corner.
-Note: If the Secure FW showed as Unknown, you could click Read FW Version on the right side of it to get the version. You may also upgrade the Adapter FW to the latest if it was not the latest yet.
+**Note**: If the Secure FW showed as Unknown, you could click Read FW Version on the right side of it to get the version. You may also upgrade the Adapter FW to the latest if it was not the latest yet.
 
 ![Overview](/images/Lab_ThunderboardOverview.png)
 
 4. Select the "Preferred SDK" to the latest version. For this lab, the latest version of "Gecko SDK Suite" v3.1.1 is used.
 5. Click on "Create New Project" in the upper right hand corner. A "New Project Wizard" window should appear.
 6. For this lab, the Bluetooth -> SoC Empty project will be used as the starter project. Scroll and select Bluetooth -> SoC Empty. 
-Note: to filter the projects, Select/Checked the Bluetooth for the "Technology Type" and empty for "keywords".
+**Note**: to filter the projects, Select/Checked the Bluetooth for the "Technology Type" and empty for "keywords".
 
 ![Filter](/images/Lab_SocEmptyFilter.png)
 
@@ -132,7 +132,7 @@ void sl_internal_app_process_action(void)
 }
 ```
 
-Note: UUID for Acceleration and Orientation could be attained in this step.
+**Note**: UUID for Acceleration and Orientation could be attained in this step.
 
 ### Adding the Project Source Files
 17. Copy app.c source file to the top level of the project. The source files (automatically added included) and code details are found at the Code Explanation section of this doc. app.c will overwrite the existing file to add the new application. The source files can be dragged and dropped into Simplicity Studio or placed in this file path.
@@ -143,9 +143,9 @@ You can also edit the app.c file manually if you prefer to this way.
 ### Build and Flash the Project
 18. Build the project by clicking on the hammer icon in the top left corner of the Simplicity Studio IDE perspective.
 Right-click on the hex file and select Flash to Device... to make the Flash Programmer window appear. 
-Note: if a Device Selection window appears, select the correct device.
+**Note**: if a Device Selection window appears, select the correct device.
 19. Click Program to flash the device.
-Note: The BG22 has additional security features and in some cases (i.e., when the board is first plugged in), the tools will prompt to query the Debug Challenge Interface (DCI). Select the connected device and then the link for “Click to Query Lock Status.” The device target to program text will no longer be grayed out and then select “OK.”
+**Note**: The BG22 has additional security features and in some cases (i.e., when the board is first plugged in), the tools will prompt to query the Debug Challenge Interface (DCI). Select the connected device and then the link for “Click to Query Lock Status.” The device target to program text will no longer be grayed out and then select “OK.”
 
 ![Flash Programmer](/images/Lab_ProgramFlash.png)
 
@@ -155,7 +155,7 @@ Note: The BG22 has additional security features and in some cases (i.e., when th
 
 ![EFR Connect 1](/images/EFR_Connect_1.png)
 
-Note: If there are many Bluetooth device around. You may try to get the MAC of the device via Simplicity Commander (Serial number) first. You may also change the device name in GATT configure and use that to know what device you should connect to.
+**Note**: If there are many Bluetooth device around. You may try to get the MAC of the device via Simplicity Commander (Serial number) first. You may also change the device name in GATT configure and use that to know what device you should connect to.
 Or filter the scanning via RSSI strength and other.
 
 ![Commader](/images/Lab_Commander.png)
