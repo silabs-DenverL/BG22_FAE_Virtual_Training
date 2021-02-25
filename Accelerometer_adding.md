@@ -106,7 +106,7 @@ You will see components like below were installed, if you don't see these compon
 17. You could rename the device name with *gatt_configuration.btconf* file.  
 ![device name](/images/Lab_Rename.png)  
 
-#### Recap of Thes Steps (explanation):
+#### Recap of Thes Steps:
 ##### ICM20648 IMU Sensor
 After you add/install the *IMU - Inertial Measurement Unit*, you will see some files were added. For example, *sl_icm20648.c* and *sl_icm20648.h* will be added.  
 **Note:** These files are driver file prepared by Silabs for ICM-20648. If you use sensor from another vendor, you need implement the similar driver by your own.  
