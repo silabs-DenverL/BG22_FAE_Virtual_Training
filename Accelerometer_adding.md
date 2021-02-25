@@ -103,7 +103,6 @@ You will see components like below were installed, if you don't see these compon
 - Bluetooth-> Sensor->Inertial Measurement Unit  
 ![GATT Service](/images/Lab_Bluetooth_GATT_Service.png)  
 
-### Rename the *device name*
 17. You could rename the device name with *gatt_configuration.btconf* file.  
 ![device name](/images/Lab_Rename.png)  
 
