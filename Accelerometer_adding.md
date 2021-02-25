@@ -149,7 +149,7 @@ Right-click on the *hex* file (under *GNU ARM xxx - Debug*) and select *Flash to
 
 ## Usage
 ### Connecting with EFR Connect App
-21. With the *EFR Connect App*, *Connect* to the device and view the sensor data that is sent from the EFR32BG22 device (via notification).  
+21. Open the mobile app “EFR Connect” and select the “Browser.” With the *EFR Connect App*, *Connect* to the device and view the sensor data that is sent from the EFR32BG22 device (via notification).  
 ![EFR Connect 1](/images/EFR_Connect_1.png)  
 **Note**: If there are many bluetooth device around.  
 You may try to get the *MAC* of the device via *Simplicity Commander* (*Serial Number*) first.  
@@ -157,7 +157,7 @@ You may also use *device name* (step 17 above) to know what device you should co
 You may also filter the scanning via *RSSI* strength and other.  
 ![Commader](/images/Lab_Commander.png)  
 ![RSSI Strength](/images/Lab_RSSI.png)  
-
+**Note:** If the board is not found, press the reset button on the BG22 or restart scanning in the app.  
 22. Click the *notify* button (UUID that has 885D and 45DD, (step 16 above)).  
 ![EFR Connect 2](/images/EFR_Connect_2.png)  
 **Note:** UUID  
