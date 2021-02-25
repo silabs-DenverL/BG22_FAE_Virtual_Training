@@ -160,7 +160,7 @@ You may try to get the *MAC* of the device via *Simplicity Commander* (*Serial N
 You may also use 'device name' (step 17 above) to know what device you should connect to.  
 You may also filter the scanning via *RSSI* strength and other.  
 ![Commader](/images/Lab_Commander.png)  
-![RSSI Strength](/images/Lab_Orientation_UUID.png)  
+![RSSI Strength](/images/Lab_RSSI.png)  
 
 22. Click the 'notify' button (UUID that has 885D and 45DD, (step 16 above)).  
 ![EFR Connect 2](/images/EFR_Connect_2.png)  
