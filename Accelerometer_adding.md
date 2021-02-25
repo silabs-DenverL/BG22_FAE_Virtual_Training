@@ -78,7 +78,7 @@ EFR32BG22 pins used to connect between the EFR32BG22 and ICM-20648:
 
 13. You could see *gatt_configuration.btconf*, *soc_spi_acc.slcp* and *readme* showed up.
 
-#### Recap of These Step:
+#### Recap of These Steps:
 Congratulations! The SoC Empty succesfully created. In fact, the *SoC Empty* project will pre-install some software components.  
 You could check what have been installed via checking the *Installed Components* under *Software Components*.  
 ![Pre Installed Components](/images/Lab_PreInstalled.png)  
