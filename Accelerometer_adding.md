@@ -104,7 +104,7 @@ You will see components like below were installed:
 
 - Bluetooth-> GATT->Inertial Measurement Unit GATT Service  
 - Bluetooth-> Sensor->Inertial Measurement Unit  
-![GATT Service](/images/Lab_Bluetooth_GATT_Service.png =)  
+![GATT Service](/images/Lab_Bluetooth_GATT_Service.png)  
 
 #### Recap of this step (explanation):
 ##### ICM20648 Motion Sensor
