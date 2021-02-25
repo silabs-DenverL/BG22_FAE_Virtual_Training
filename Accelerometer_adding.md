@@ -181,7 +181,7 @@ The pin map for ICM20648 is here:
 This file is located in folder like  
 *C:\SiliconLabs\SimplicityStudio\v5\developer\sdks\gecko_sdk_suite\v3.1\hardware\driver\icm20648\src*  
 This is the driver file for ICM-20648 sensor prepared by Silabs.  
-// Isaac advice!!!  
+![File path](/images/Lab_filePath.png)  
 
 If you use sensor from another vendor, you may need to consider implementing the similar driver for it.  
 Please consider contacting with the vendor of the sensor you use to get help on how implementing the driver.  
