@@ -108,6 +108,8 @@ You will see components like below were installed, if you don't see these compon
 After you add/install the *IMU - Inertial Measurement Unit*, you will see some files were added. For example, *sl_icm20648.c* and *sl_icm20648.h* will be added.  
 **Note:** These files are driver file prepared by Silabs for ICM-20648. If you use sensor from another vendor, you need implement the similar driver by your own.  
 ![IMU Driver](/images/Lab_icm20648_driver.png)  
+The pin map for ICM20648 is here:
+![Pin map](/images/Lab_pinmap.png)
 
 ##### Inertial Measurement Unit GATT Service.
 After you add/install the *Inertial Measurement Unit GATT Service*, you will see somes other files was added.  
