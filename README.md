@@ -154,7 +154,7 @@ Note: The BG22 has additional security features and in some cases (i.e., when th
 
 <img src="https://github.com/silabs-DenverL/ADCxSyncCapture/blob/master/EFR_Connect_1.png"/>
 Note: If there are many Bluetooth device around. You may try to get the MAC of the device via Simplicity Commander (Serial number) first. You may also change the device name in GATT configure and use that to know what device you should connect to.
-Or filter thee scanning via RSS strength and other.
+Or filter the scanning via RSSI strength and other.
 
 <img src="https://github.com/silabs-DenverL/ADCxSyncCapture/blob/master/Commander.png"/>
 <img src="https://github.com/silabs-DenverL/ADCxSyncCapture/blob/master/UUID.png"/>
