@@ -103,6 +103,10 @@ You will see components like below were installed, if you don't see these compon
 - Bluetooth-> Sensor->Inertial Measurement Unit  
 ![GATT Service](/images/Lab_Bluetooth_GATT_Service.png)  
 
+### Rename the *device name*
+17. You could rename the device name with *gatt_configuration.btconf* file.  
+![device name](/images/Lab_Rename.png)  
+
 #### Recap of this step (explanation):
 ##### ICM20648 Motion Sensor
 After you add/install the *IMU - Inertial Measurement Unit*, you will see some files were added. For example, *sl_icm20648.c* and *sl_icm20648.h* will be added.  
@@ -126,10 +130,6 @@ void sl_internal_app_process_action(void)
 ```
   
 **Note**: UUID for Acceleration and Orientation could be attained in this step.  
-
-### Rename the *device name*
-17. // Isaac  
-![device name](/images/Lab_Rename.png)  
 
 ### Adding the Project Source Files
 18. Copy [app.c](/source/app.c) source file to the top level of the project. 
