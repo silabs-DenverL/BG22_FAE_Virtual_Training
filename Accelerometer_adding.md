@@ -84,7 +84,7 @@ EFR32BG22 pins used to connect between the EFR32BG22 and ICM-20648:
 
 In fact, the *SoC Empty* project will install some software components. 
 You could check what have been installed via checking the *Installed Components* under *Software Components*.  
-![Pre Installed Components](/images/Lab_PreInstalled.png.png)  
+![Pre Installed Components](/images/Lab_PreInstalled.png)  
 
 You will see components like below were installed: 
 - Advanced Configurator->Bluetooth GATT Configurator
