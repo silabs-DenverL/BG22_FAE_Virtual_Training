@@ -97,7 +97,7 @@ You will see components like below were installed, if you don't see these compon
 ![IO Stream](/images/Lab_IO_Stream.png)  
 
 - Platform->Board Drivers->IMU - Inertial Measurement Unit  
-![IMU Sensor](/images/Lab_IMU_Sensor.png =300x300)  
+![IMU Sensor](/images/Lab_IMU_Sensor.png)  
 
 - Bluetooth-> GATT->Inertial Measurement Unit GATT Service  
 - Bluetooth-> Sensor->Inertial Measurement Unit  
