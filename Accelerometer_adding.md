@@ -64,7 +64,7 @@ EFR32BG22 pins used to connect between the EFR32BG22 and ICM-20648:
 5. Click on *Create New Project* in the upper right hand corner. A *New Project Wizard* window should appear. 
 6. For this lab, the *Bluetooth->SoC Empty* project will be used as the starter project. Scroll and select *Bluetooth->SoC Empty*.  
 **Note**: To filter the projects, Select/Checked the *Bluetooth* for the *Technology Type* and *empty* for *Filter on keywords*.  
-![Filter](/images/Lab_SocEmptyFilter.png =300)  
+![Filter](/images/Lab_SocEmptyFilter.png)  
 
 7. Click *Next* to move on. 
 8. Rename the project under *Project name*. For this lab, name the project *soc_spi_acc*.  
@@ -104,7 +104,7 @@ You will see components like below were installed:
 
 - Bluetooth-> GATT->Inertial Measurement Unit GATT Service  
 - Bluetooth-> Sensor->Inertial Measurement Unit  
-![GATT Service](/images/Lab_Bluetooth_GATT_Service.png = 300)  
+![GATT Service](/images/Lab_Bluetooth_GATT_Service.png =)  
 
 #### Recap of this step (explanation):
 ##### ICM20648 Motion Sensor
