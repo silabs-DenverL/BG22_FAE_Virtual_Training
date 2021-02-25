@@ -64,7 +64,7 @@ EFR32BG22 pins used to connect between the EFR32BG22 and ICM-20648:
 5. Click on 'Create New Project' in the upper right hand corner. A 'New Project Wizard' window should appear. 
 6. For this lab, the 'Bluetooth->SoC Empty' project will be used as the starter project. Scroll and select 'Bluetooth->SoC Empty'.  
 **Note**: To filter the projects, Select/Checked the 'Bluetooth' for the 'Technology Type' and 'empty' for 'Filter on keywords'.  
-![Filter](/images/Lab_SocEmptyFilter.png)  
+![Filter](/images/Lab_SocEmptyFilter.png = 300x300)  
 
 7. Click 'Next' to move on. 
 8. Rename the project under 'Project name'. For this lab, name the project 'soc_spi_acc'.  
