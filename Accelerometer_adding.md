@@ -112,7 +112,7 @@ After you add/install the *IMU - Inertial Measurement Unit*, you will see some f
 **Note:** These files are driver file prepared by Silabs for ICM-20648. If you use sensor from another vendor, you need implement the similar driver by your own.  
 ![IMU Driver](/images/Lab_icm20648_driver.png)  
 
-##### IMU GATT Service.
+##### IMU GATT Service
 After you add/install the *Inertial Measurement Unit GATT Service*, you will see somes other files was added.  
 ![GATT Service](/images/Lab_GATT_Service.png)  
 
