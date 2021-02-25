@@ -160,8 +160,7 @@ You may also filter the scanning via *RSSI* strength and other.
 **Note:** If the board is not found, press the reset button on the BG22 or restart scanning in the app.  
 22. Click the *notify* button (UUID that has 885D and 45DD, (step 16 above)).  
 ![EFR Connect 2](/images/EFR_Connect_2.png)  
-**Note:** You should be able to get the UUID in *gatt btconfigurator* view for file *gatt_configuration.btconf*.    
- 
+**Note:** You should be able to get the UUID in *gatt btconfigurator* view for file *gatt_configuration.btconf*.  
 ![UUID](/images/Lab_Orientation_UUID.png)  
 
 23. You should see the sensor data get updated regularly.  
